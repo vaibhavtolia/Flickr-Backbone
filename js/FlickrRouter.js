@@ -9,7 +9,7 @@ var FlickrRouter = Backbone.Router.extend({
 	defaultRoute : function(){
 
 		app.init();
-		app.url = 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&tags=fancy&callback=?';
+		app.url = 'http://api.flickr.com/services/feeds/photos_public.gne?format=json&tags=love,newyork,grey&callback=?';
 		app.initialize();
 		var view = new FlickrPhotoView();
 		app.setView(view);
@@ -39,5 +39,5 @@ app.flickr_router = new FlickrRouter();
 
 Backbone.history.start({ 
 	pushState: true,
-	root: '/'
+	root: '/Flickr-Backbone'
 });

@@ -20,7 +20,7 @@ var PhotoView = Backbone.View.extend({
     render : function(){
 
     	var self = this;
-
+        $(".header").show();
 		_(this.collection.models).each(function(item){ 
 			self.addPhoto(item);
 		}, this);
@@ -51,6 +51,7 @@ var FlickrPhotoView  = PhotoView.extend({
     	
     	_.bindAll(this, 'setCollection');
     	PhotoView.prototype.initialize.apply(this);
+        $(".header").html("Flickr Photo Feed");
 
     },
 
@@ -79,6 +80,7 @@ var AuthorPhotoView = PhotoView.extend({
 
 		_.bindAll(this, 'setCollection'); 
 		PhotoView.prototype.initialize.apply(this);
+        $(".header").html("Authors Photo Feed");
 
 	},
 
@@ -108,6 +110,7 @@ var FriendsPhotoView = PhotoView.extend({
 
 		_.bindAll(this, 'setCollection'); 
 		PhotoView.prototype.initialize.apply(this);
+        $(".header").html("Friends Photo Feed");
 
 	},
 

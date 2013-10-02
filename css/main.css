@@ -78,6 +78,18 @@ textarea {
   animation:         loading 2s ease-out; /* IE 10+ */
 }
 
+.header{
+  width: 100%;
+  padding: 0.5em 0;
+  background: rgba(36, 36, 36, 0.84);
+  position: fixed;
+  display: none;
+  color: #f2f2f2;
+  font-size: 1.2em;
+  text-align: center;
+  vertical-align: middle;
+}
+
 .photo-container {
   display: inline-block;
   padding: 1em;
@@ -103,6 +115,7 @@ textarea {
 
 #photos-wrapper{
   text-align: center;
+  padding-top: 40px;
 }
 
 
