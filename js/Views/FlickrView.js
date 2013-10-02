@@ -129,7 +129,8 @@ var LoadingView = Backbone.View.extend({
 
 		$('body').append('<div id="loading-wrapper"></div>');
 		this.el = $("#loading-wrapper");
-		$(this.el).append('<div class="loader"></div>');
+		$(this.el).append('<div class="loader"><div class="ball"></div></div>');
+        $(".header").hide();
 
 	},
 
